@@ -5,20 +5,21 @@
 <html>
 <head>
 	<title></title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Merriweather" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="tech.css">
 </head>
 <body>
+<h3>Technician Form</h3>
 <div class="form">
 	<form action="\action_page.php" target="_self" method="POST">
 	<div>Name:
-	<input type="text" name="name"></div><br>
+	<input type="text" name="name" required></div><br>
 	<div>SR/IM:
-	<input type="text" name="incident"></div><br>
+	<input type="text" name="incident" required></div><br>
 
 	<div>
 		<label>Update Type:</label>
-		<select name="update">
+		<select name="update" required>
 			<option value="ETA">Setting ETA</option>
 			<option value="Check-in">Check-in</option>
 			<option value="Check-out">Check-out</option>
@@ -40,7 +41,7 @@
 	<br>
 
 	<div>
-		<label id="checkio">For Check In/Out:</label>
+    <label id="checkio"><b>For Check In/Out:</b></label>
 		<div>Check In:
 		<input type="time" name="in"></div>
 		<br>
@@ -55,7 +56,6 @@
 	<input type="submit" name="submit">
 </form>
 </div>
-
 
 </body>
 </html>

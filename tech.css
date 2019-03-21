@@ -1,3 +1,8 @@
+body {
+  max-width: 500px;
+  margin: auto;
+}
+
 .form {
 	font-family: Roboto;
 	margin-right: 1px;
@@ -5,4 +10,9 @@
 
 #checkio {
 	text-transform: uppercase;
+}
+
+h3 {
+  font-family: Merriweather;
+  font-size: 2.0em;
 }
